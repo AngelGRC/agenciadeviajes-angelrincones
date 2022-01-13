@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-body{
-
-    background-color: #2c373d;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* -------------------HEADER--------------*/
 
@@ -108,6 +103,7 @@ body{
     padding: 1rem;
     border: solid 1px #6b8853;
     border-radius: 4px;
+    background-color: #212529;
 }
 
 .contenedor h2{
@@ -118,7 +114,6 @@ body{
 
 .contenedor p{
     font-size: 1rem;
-    margin-bottom: 1rem;
     color: #ffffff;
 }
 
@@ -249,7 +244,7 @@ body{
 /* -------------------MAIN TESTIMONIOS--------------*/
 
 .gridTestimonio {
-    color: #ffffff;
+    color: #000000;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -262,7 +257,6 @@ body{
     
 .testimonioImagenUno{
     grid-area: testimonioImagenUno;
-    margin-top: 6.25rem;
     padding: 3rem;
     border-bottom: #6b8853 1px solid;
 }
@@ -270,7 +264,6 @@ body{
 .testimonioDescripcionUno{
     grid-area: testimonioDescripcionUno;
     padding: 3rem;
-    margin-top: 6.25rem;
     border-bottom: #6b8853 1px solid;
 }
 
@@ -334,7 +327,7 @@ body{
 }
 
 .main__formReserva{
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-size: 2rem;
 }
@@ -450,7 +443,7 @@ input[type=text], input[type=email], select, input[type=radio], input[type=date]
 /* -------------------MAIN CONTACTO--------------*/
 
 .main__formContacto{
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-size: 2rem;
 }
