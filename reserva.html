@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Reserva</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__logo">
+            <a href="index.html"><img src="img/logo.svg" alt=""></a>
+        </div>
+
+        <nav class="header__navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="reserva.html">Reserva tu vuelo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="form__contenedor">
+            <section class="main__formReserva">
+                <form action="" class="gridformReserva">
+
+                    <div class="formNombre">
+                        <label for="nombre">Nombre</label> 
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+                    </div>
+
+                    <div class="formApellido">
+                        <label for="apellido">Apellido</label> 
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
+                    </div>
+
+                    <div class="formEmail">
+                        <label for="email">Email</label> 
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
+                    </div>
+                    <!-- Menus desplegables -->
+
+                    <div class="formOrigen">
+                        <label for="origen">Origen</label>
+
+                        <select name="origen" id="origen" required>
+                            <option value="ar">Buenos Aires</option>
+                        </select>
+                    </div>
+                    <div class="formDestino">
+                        <label for="destino">Destino</label>
+
+                        <select name="destino" id="destino" required>
+                            <option value="">Selecciona un destino</option>
+                            <option value="eu">España</option>
+                            <option value="uk">Reino Unido</option>
+                            <option value="au">Mexico</option>
+                        </select>
+                    </div>
+
+                    <div class="formAdulto">
+                        <label for="adulto">Adultos</label>
+
+                        <input type="radio" name="adulto" id="adulto" value="1" required /><label
+                            for="adultocantidad">1</label>
+                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
+                            for="adultocantidad">2</label>
+                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
+                            for="adultocantidad">3</label>
+                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
+                            for="adultocantidad">4</label>
+                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
+                            for="adultocantidad">5</label>
+                    </div>
+
+                    <div class="formNino">
+                        <label for="nino">Niños</label>
+
+                        <input type="radio" name="nino" id="nino" value="1" required /><label
+                            for="ninocantidad">1</label>
+                        <input type="radio" name="nino" id="nino" value="2" required /><label
+                            for="ninocantidad">2</label>
+                        <input type="radio" name="nino" id="nino" value="2" required /><label
+                            for="ninocantidad">3</label>
+                        <input type="radio" name="nino" id="nino" value="2" required /><label
+                            for="ninocantidad">4</label>
+                        <input type="radio" name="nino" id="nino" value="2" required /><label
+                            for="ninocantidad">5</label>
+                    </div>
+
+                    <div class="formFechaDesde">
+                        <label for="desde">Desde</label>
+
+                        <input type="date" name="desde" id="desde" />
+                    </div>
+
+                    <div class="formFechaHasta">
+                        <label for="hasta">Hasta</label>
+
+                        <input type="date" name="hasta" id="hasta" />
+                    </div>
+
+                    <div class="formBotones">
+                        <input type="submit" value="Reservar" class="formBotones btn submit"/>
+                        <input type="reset" value="Limpiar" class="formBotones btn"/>
+                    </div>
+
+                    <div class="formImgLateral">
+                        <img src="img/hotel2.jpg" alt="" class="imgFormLateral">
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__contenido">
+            <div class="footer__metodosDePago">
+                <img src="img/qrcode_chrome.png" alt="" />
+            </div>
+
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="reserva.html">Reserva tu vuelo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__btnContacto">
+                <img src="img/1383269.png" alt="" />
+            </div>
+        </div>
+
+        <p class="footer__credito">
+            Agencia de viajes Rincones &copy; 2021 | Coderhouse
+        </p>
+    </footer>
+</body>
+
+</html>

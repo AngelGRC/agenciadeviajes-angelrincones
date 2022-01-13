@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Reserva</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__logo">
+            <a href="index.html"><img src="img/logo.svg" alt=""></a>
+        </div>
+
+        <nav class="header__navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="reserva.html">Reserva tu vuelo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="form__contenedor">
+            <section class="main__formContacto">
+                <form action="" class="gridFormContacto">
+
+                    <div class="formNombre">
+                        <label for="nombre">Nombre</label> 
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+                    </div>
+
+                    <div class="formApellido">
+                        <label for="apellido">Apellido</label> 
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
+                    </div>
+
+                    <div class="formEmail">
+                        <label for="email">Email</label> 
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
+                    </div>                    
+
+                    <div class="formBotones">
+                        <input type="submit" value="Enviar" class="formBotones btn submit"/>
+                        <input type="reset" value="Limpiar" class="formBotones btn"/>
+                    </div>
+
+                    <div class="formImgLateral">
+                        <img src="img/hotel1.jpg" alt="" class="imgFormLateral">
+                    </div>
+
+                    <div class="formConsulta">
+                        <textarea id="consulta" name="consulta" rows="15" cols="50" class="desktop"></textarea>
+                        <textarea id="consulta" name="consulta" rows="15" cols="20" class="mobile"></textarea>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__contenido">
+            <div class="footer__metodosDePago">
+                <img src="img/qrcode_chrome.png" alt="" />
+            </div>
+
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="reserva.html">Reserva tu vuelo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__btnContacto">
+                <img src="img/1383269.png" alt="" />
+            </div>
+        </div>
+
+        <p class="footer__credito">
+            Agencia de viajes Rincones &copy; 2021 | Coderhouse
+        </p>
+    </footer>
+</body>
+
+</html>
