@@ -31,7 +31,7 @@
                     <a class="nav-link" href="testimonios.html">Testimonios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reserva.html">Reserva tu vuelo</a>
+                    <a class="nav-link" href="reserva.html">Reserva tu viaje</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="contacto.html">Contacto</a>
@@ -80,29 +80,54 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer__contenido">
-            <div class="footer__metodosDePago">
-                <img src="img/qrcode_chrome.png" alt="" />
+    <div class="container-fluid bg-dark">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-2">
+             
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="destinos.html" class="nav-link p-0 text-muted">Destinos</a></li>
+              </ul>
             </div>
-
-            <div class="footer__menu">
-                <ul>
-                    <li><a href="destinos.html">Destinos</a></li>
-                    <li><a href="testimonios.html">Testimonios</a></li>
-                    <li><a href="reserva.html">Reserva tu vuelo</a></li>
-                </ul>
+      
+            <div class="col-2">
+             
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="reserva.html" class="nav-link p-0 text-muted">Reserva tu viaje</a></li>
+              </ul>
             </div>
-
-            <div class="footer__btnContacto">
-                <img src="img/1383269.png" alt="" />
+      
+            <div class="col-2">
+              
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+              </ul>
             </div>
-        </div>
+      
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Suscribite!</h5>
+                <p>Promociones y descuentos.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-success" type="button">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-1 my-2 border-top">
+            <p>&copy; 2022 Angel Rincones, Coderhouse.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
 
-        <p class="footer__credito">
-            Agencia de viajes Rincones &copy; 2021 | Coderhouse
-        </p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
