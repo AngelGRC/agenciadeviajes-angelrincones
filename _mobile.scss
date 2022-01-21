@@ -1,0 +1,117 @@
+@media only screen and (max-width:599px){
+
+    .gridHoteles{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "imagenUno" 
+        "imagenDos"
+        "imagenTres";
+    }
+
+    .gridDestinos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "destinoImagenUno" 
+        "destinoDescripcionUno"
+        "destinoImagenDos" 
+        "destinoDescripcionDos"
+        "destinoImagenTres"
+        "destinoDescripcionTres";
+    }
+
+    .bannerDestinos{
+        display: none;
+    }
+
+    .destinoImagenUno{
+        margin-top: 6.25rem;
+    }
+
+    .gridDestinos ul li{
+        display: list-item;
+        padding: 1rem;
+        margin-top: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .gridTestimonio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "testimonioImagenUno" 
+        "testimonioDescripcionUno"
+        "testimonioImagenDos" 
+        "testimonioDescripcionDos"
+        "testimonioImagenTres"
+        "testimonioDescripcionTres";
+    }
+
+    .testimonioDescripcionUno, .testimonioDescripcionDos{
+        margin-top: 0rem;
+        border-bottom: #6b8853 1px solid;
+        padding: 0rem;
+    }
+
+    .testimonioDescripcionTres{
+        margin-top: 0rem;
+        padding: 0rem;
+    }
+
+    .testimonioImagenUno, .testimonioImagenDos, .testimonioImagenTres{
+        padding: 1rem;
+        border: none;
+    }
+
+    .gridformReserva{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "formNombre"
+        "formApellido"
+        "formEmail" 
+        "formOrigen"
+        "formDestino"
+        "formAdulto" 
+        "formNino"
+        "formFechaDesde"
+        "formFechaHasta"
+        "formBotones";
+        font-size: 1rem;
+    }
+
+    .formImgLateral{
+        display: none;
+    }
+
+    .formBotones{
+        padding: 1rem;
+    }
+
+    .gridFormContacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "formNombre"
+        "formApellido"
+        "formEmail" 
+        "formConsulta"
+        "formBotones";
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: inline;
+    }
+
+}
