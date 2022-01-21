@@ -1,0 +1,612 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------------HEADER--------------*/
+.header {
+  background-color: #6b8853;
+  border-bottom: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 6.25rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.header__navbar ul li {
+  display: inline-block;
+}
+
+.header__navbar {
+  margin-right: 2rem;
+}
+
+.header__navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+.header__logo {
+  margin-left: 2rem;
+}
+
+.header__logo img {
+  height: 10rem;
+  width: auto;
+}
+
+.header__navbar a:hover {
+  color: #dce6d3;
+}
+
+/* -------------------MAIN INDEX--------------*/
+.main__banner {
+  background-image: url("../img/pexels-jess-loiterton-4601159.jpg");
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__banner h1 {
+  text-align: center;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.main__banner button {
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #6b8853;
+  text-align: center;
+}
+
+.main__banner a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* SECCION HOTELES */
+.contenedor {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px #6b8853;
+  border-radius: 4px;
+  background-color: #212529;
+}
+
+.contenedor h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contenedor p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.imagenHotel {
+  width: 100%;
+  height: 16rem;
+}
+
+.gridHoteles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "imagenUno imagenDos imagenTres";
+}
+
+.imagenUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagenUno;
+}
+
+.imagenDos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imagenDos;
+}
+
+.imagenTres {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: imagenTres;
+}
+
+.card__hotel {
+  background-color: #6b8853;
+  border: #2c373d 1px solid;
+  padding: 0.4rem;
+}
+
+.card__hotel h3 {
+  color: #ffffff;
+}
+
+/* --------------MAIN DESTINOS------------------*/
+.gridDestinos {
+  color: #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+      grid-template-areas: "bannerDestinos bannerDestinos" "destinoImagenUno destinoDescripcionUno" "destinoImagenDos destinoDescripcionDos" "destinoImagenTres destinoDescripcionTres";
+}
+
+.bannerDestinos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: bannerDestinos;
+}
+
+.destinoImagenUno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: destinoImagenUno;
+}
+
+.destinoDescripcionUno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: destinoDescripcionUno;
+  padding: 3rem;
+}
+
+.destinoImagenDos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: destinoImagenDos;
+  border-top: #6b8853 1px solid;
+  border-bottom: #6b8853 1px solid;
+}
+
+.destinoDescripcionDos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: destinoDescripcionDos;
+  padding: 3rem;
+  border-top: #6b8853 1px solid;
+  border-bottom: #6b8853 1px solid;
+}
+
+.destinoImagenTres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: destinoImagenTres;
+}
+
+.destinoDescripcionTres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: destinoDescripcionTres;
+  padding: 3rem;
+}
+
+.imgBanner {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.imgDestino {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gridDestinos h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.gridDestinos h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-style: bold;
+}
+
+.gridDestinos p {
+  text-align: justify;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.gridDestinos ul li {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* -------------------MAIN TESTIMONIOS--------------*/
+.gridTestimonio {
+  color: #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+      grid-template-areas: "testimonioImagenUno testimonioDescripcionUno" "testimonioDescripcionDos testimonioImagenDos" "testimonioImagenTres testimonioDescripcionTres";
+}
+
+.testimonioImagenUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: testimonioImagenUno;
+  padding: 3rem;
+  border-bottom: #6b8853 1px solid;
+}
+
+.testimonioDescripcionUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: testimonioDescripcionUno;
+  padding: 3rem;
+  border-bottom: #6b8853 1px solid;
+}
+
+.testimonioImagenDos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: testimonioImagenDos;
+  padding: 3rem;
+  border-bottom: #6b8853 1px solid;
+}
+
+.testimonioDescripcionDos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: testimonioDescripcionDos;
+  padding: 3rem;
+  border-bottom: #6b8853 1px solid;
+}
+
+.testimonioImagenTres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: testimonioImagenTres;
+  padding: 3rem;
+}
+
+.testimonioDescripcionTres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: testimonioDescripcionTres;
+  padding: 3rem;
+}
+
+.imgTestimonio {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border: #6b8853 1px solid;
+}
+
+.gridTestimonio h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.gridTestimonio h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-style: bold;
+}
+
+.gridTestimonio p {
+  text-align: justify;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+/* -------------------MAIN RESERVA--------------*/
+.form__contenedor {
+  text-align: center;
+  margin: 2rem;
+  border: solid 1px #6b8853;
+  border-radius: 4px;
+}
+
+.main__formReserva {
+  color: #000000;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gridformReserva {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "formNombre formImgLateral" "formApellido formImgLateral" "formEmail formImgLateral"  "formOrigen formImgLateral" "formDestino formImgLateral" "formAdulto formImgLateral"  "formNino formImgLateral" "formFechaDesde formImgLateral" "formFechaHasta formImgLateral" "formBotones formImgLateral";
+}
+
+.formNombre {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: formNombre;
+  padding: 1rem;
+}
+
+.formApellido {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: formApellido;
+  padding: 1rem;
+}
+
+.formEmail {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: formEmail;
+  padding: 1rem;
+}
+
+.formOrigen {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: formOrigen;
+  padding: 1rem;
+}
+
+.formDestino {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: formDestino;
+  padding: 1rem;
+}
+
+.formAdulto {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: formAdulto;
+  padding: 1rem;
+}
+
+.formNino {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: formNino;
+  padding: 1rem;
+}
+
+.formFechaDesde {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: formFechaDesde;
+  padding: 1rem;
+}
+
+.formFechaHasta {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: formFechaHasta;
+  padding: 1rem;
+}
+
+.formImgLateral {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  grid-area: formImgLateral;
+  width: auto;
+  height: 50rem;
+}
+
+.imgFormLateral {
+  width: 100%;
+  height: 100%;
+}
+
+.formBotones {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: formBotones;
+  padding: 1rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  font-style: bold;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+.submit {
+  background-color: #6b8853;
+}
+
+input[type=text], input[type=email], select, input[type=radio], input[type=date] {
+  border: 1px solid #6b8853;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #6b8853;
+}
+
+/* -------------------MAIN CONTACTO--------------*/
+.main__formContacto {
+  color: #000000;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gridFormContacto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "formNombre formImgLateral" "formApellido formImgLateral" "formEmail formImgLateral"  "formConsulta formImgLateral" "formBotones formImgLateral";
+}
+
+.formConsulta {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: formConsulta;
+}
+
+textarea {
+  border: 1px solid #6b8853;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #6b8853;
+}
+
+.mobile {
+  display: none;
+}
+
+/* -------------------FOOTER--------------*/
+footer {
+  color: white;
+}
+
+footer button {
+  background-color: #6b8853;
+}
+
+.btn-success {
+  background-color: #6b8853;
+}
+
+/* MEDIA QUERIES */
+/*VISTA MOBILE*/
+@media only screen and (max-width: 599px) {
+  .gridHoteles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "imagenUno"  "imagenDos" "imagenTres";
+  }
+  .gridDestinos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "destinoImagenUno"  "destinoDescripcionUno" "destinoImagenDos"  "destinoDescripcionDos" "destinoImagenTres" "destinoDescripcionTres";
+  }
+  .bannerDestinos {
+    display: none;
+  }
+  .destinoImagenUno {
+    margin-top: 6.25rem;
+  }
+  .gridDestinos ul li {
+    display: list-item;
+    padding: 1rem;
+    margin-top: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  .gridTestimonio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "testimonioImagenUno"  "testimonioDescripcionUno" "testimonioImagenDos"  "testimonioDescripcionDos" "testimonioImagenTres" "testimonioDescripcionTres";
+  }
+  .testimonioDescripcionUno, .testimonioDescripcionDos {
+    margin-top: 0rem;
+    border-bottom: #6b8853 1px solid;
+    padding: 0rem;
+  }
+  .testimonioDescripcionTres {
+    margin-top: 0rem;
+    padding: 0rem;
+  }
+  .testimonioImagenUno, .testimonioImagenDos, .testimonioImagenTres {
+    padding: 1rem;
+    border: none;
+  }
+  .gridformReserva {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "formNombre" "formApellido" "formEmail"  "formOrigen" "formDestino" "formAdulto"  "formNino" "formFechaDesde" "formFechaHasta" "formBotones";
+    font-size: 1rem;
+  }
+  .formImgLateral {
+    display: none;
+  }
+  .formBotones {
+    padding: 1rem;
+  }
+  .gridFormContacto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "formNombre" "formApellido" "formEmail"  "formConsulta" "formBotones";
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
