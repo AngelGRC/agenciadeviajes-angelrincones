@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/bootstrap.min.css" rel="stylesheet"
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Reserva</title>
@@ -46,31 +46,31 @@
             <section class="main__formContacto">
                 <form action="" class="gridFormContacto">
 
-                    <div class="formNombre">
+                    <div class="formContactoNombre">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
                     </div>
 
-                    <div class="formApellido">
+                    <div class="formContactoApellido">
                         <label for="apellido">Apellido</label>
                         <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
                     </div>
 
-                    <div class="formEmail">
+                    <div class="formContactoEmail">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
                     </div>
 
-                    <div class="formBotones">
+                    <div class="formContactoBotones">
                         <input type="submit" value="Enviar" class="formBotones btn submit" />
                         <input type="reset" value="Limpiar" class="formBotones btn" />
                     </div>
 
-                    <div class="formImgLateral">
+                    <div class="formContactoImgLateral">
                         <img src="img/hotel1.jpg" alt="" class="imgFormLateral">
                     </div>
 
-                    <div class="formConsulta">
+                    <div class="formContactoConsulta">
                         <textarea id="consulta" name="consulta" rows="15" cols="50" class="desktop"></textarea>
                         <textarea id="consulta" name="consulta" rows="15" cols="20" class="mobile"></textarea>
                     </div>
@@ -120,9 +120,9 @@
           <div class="d-flex justify-content-between py-1 my-2 border-top">
             <p>&copy; 2022 Angel Rincones, Coderhouse.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><i class="bi-twitter"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="bi-facebook"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="bi-whatsapp"></i></a></li>
             </ul>
           </div>
         </footer>

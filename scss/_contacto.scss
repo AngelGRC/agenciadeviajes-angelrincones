@@ -1,0 +1,52 @@
+.main__formContacto{
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.gridFormContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "formContactoNombre formContactoImgLateral"
+    "formContactoApellido formContactoImgLateral"
+    "formContactoEmail formContactoImgLateral" 
+    "formContactoConsulta formContactoImgLateral"
+    "formContactoBotones formContactoImgLateral";
+}
+
+.formContactoNombre{
+    grid-area: formContactoNombre;
+}
+
+.formContactoApellido{
+    grid-area: formContactoApellido;
+}
+
+.formContactoEmail{
+    grid-area: formContactoEmail;
+}
+
+.formContactoImgLateral{
+    grid-area: formContactoImgLateral;
+}
+
+.formContactoConsulta{
+    grid-area: formContactoConsulta;
+}
+
+.formContactoBotones{
+    grid-area: formContactoBotones;
+}
+
+textarea{
+    border: 1px solid #6b8853;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #6b8853;
+}
+
+.mobile{
+    display: none;
+}

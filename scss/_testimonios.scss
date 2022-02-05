@@ -1,0 +1,71 @@
+.gridTestimonio {
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: top;
+    grid-template-areas: 
+    "testimonioImagenUno testimonioDescripcionUno"
+    "testimonioDescripcionDos testimonioImagenDos"
+    "testimonioImagenTres testimonioDescripcionTres";
+    }
+    
+.testimonioImagenUno{
+    grid-area: testimonioImagenUno;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+}
+
+.testimonioDescripcionUno{
+    grid-area: testimonioDescripcionUno;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+}
+
+.testimonioImagenDos{
+    grid-area: testimonioImagenDos;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+}
+
+.testimonioDescripcionDos{
+    grid-area: testimonioDescripcionDos;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+}
+
+.testimonioImagenTres{
+    grid-area: testimonioImagenTres;
+    padding: 3rem;
+    
+}
+
+.testimonioDescripcionTres{
+    grid-area: testimonioDescripcionTres;
+    padding: 3rem;
+}
+
+.imgTestimonio{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border: #6b8853 1px solid;
+}
+
+.gridTestimonio h3{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.gridTestimonio h4{
+    text-align: center;
+    font-size: 1rem;
+    font-style: bold;
+
+}
+
+.gridTestimonio p{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 2rem;
+}

@@ -1,0 +1,102 @@
+.destinos{
+    background-image: url(../img/pexels-jess-loiterton-4601159.jpg);
+    height: 37rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.gridDestinos {
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: top;
+    grid-template-areas: 
+    "bannerDestinos bannerDestinos"
+    "destinoImagenUno destinoDescripcionUno"
+    "destinoImagenDos destinoDescripcionDos"
+    "destinoImagenTres destinoDescripcionTres";
+    justify-items: center;
+    backdrop-filter: blur(4px);
+     }
+    
+.bannerDestinos{
+    grid-area: bannerDestinos;
+    width: 70%;
+}
+
+.destinoImagenUno{
+    grid-area: destinoImagenUno;
+    background-color: #6b8853;
+}
+
+.destinoDescripcionUno{
+    grid-area: destinoDescripcionUno;
+    padding: 3rem;
+    background-color: #6b8853;
+    color: white;
+}
+
+.destinoImagenDos{
+    grid-area: destinoImagenDos;
+    border-top: #6b8853 1px solid;
+    border-bottom: #6b8853 1px solid;
+    background-color: #6b8853;
+}
+
+.destinoDescripcionDos{
+    grid-area: destinoDescripcionDos;
+    padding: 3rem;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    background-color: #6b8853;
+    color: white;
+}
+
+.destinoImagenTres{
+    grid-area: destinoImagenTres;
+}
+
+.destinoDescripcionTres{
+    grid-area: destinoDescripcionTres;
+    padding: 3rem;
+    background-color: #6b8853;
+    color: white;
+}
+
+.imgBanner{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.imgDestino{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.gridDestinos h3{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.gridDestinos h4{
+    text-align: center;
+    font-size: 1rem;
+    font-style: bold;
+
+}
+
+.gridDestinos p{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.gridDestinos ul li{
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 3rem;
+}
