@@ -10,6 +10,18 @@
         "imagenTres";
     }
 
+    .imagenUno{
+        grid-area: imagenUno;
+    }
+    
+    .imagenDos{
+        grid-area: imagenDos;
+    }
+    
+    .imagenTres{
+        grid-area: imagenTres;
+    }
+
     .gridDestinos{
         display: grid;
         grid-template-columns: 1fr;
@@ -23,12 +35,47 @@
         "destinoDescripcionTres";
     }
 
-    .bannerDestinos{
-        display: none;
+    .destinoImagenUno{
+        grid-area: destinoImagenUno;
+        background-color: #6b8853;
+    }
+    
+    .destinoDescripcionUno{
+        grid-area: destinoDescripcionUno;
+        padding: 3rem;
+        background-color: #6b8853;
+        color: white;
+    }
+    
+    .destinoImagenDos{
+        grid-area: destinoImagenDos;
+        border-top: #6b8853 1px solid;
+        border-bottom: #6b8853 1px solid;
+        background-color: #6b8853;
+    }
+    
+    .destinoDescripcionDos{
+        grid-area: destinoDescripcionDos;
+        padding: 3rem;
+        border-top: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        background-color: #6b8853;
+        color: white;
+    }
+    
+    .destinoImagenTres{
+        grid-area: destinoImagenTres;
+    }
+    
+    .destinoDescripcionTres{
+        grid-area: destinoDescripcionTres;
+        padding: 3rem;
+        background-color: #6b8853;
+        color: white;
     }
 
-    .destinoImagenUno{
-        margin-top: 6.25rem;
+    .bannerDestinos{
+        display: none;
     }
 
     .gridDestinos ul li{
@@ -63,10 +110,43 @@
         padding: 0rem;
     }
 
-    .testimonioImagenUno, .testimonioImagenDos, .testimonioImagenTres{
-        padding: 1rem;
+    .testimonioImagenUno{
+        grid-area: testimonioImagenUno;
+        padding: 3rem;
         border: none;
     }
+    
+    .testimonioDescripcionUno{
+        grid-area: testimonioDescripcionUno;
+        padding: 3rem;
+        border-bottom: #6b8853 1px solid;
+    }
+    
+    .testimonioImagenDos{
+        grid-area: testimonioImagenDos;
+        padding: 3rem;
+        border: none;
+    }
+    
+    .testimonioDescripcionDos{
+        grid-area: testimonioDescripcionDos;
+        padding: 3rem;
+        border-bottom: #6b8853 1px solid;
+    }
+    
+    .testimonioImagenTres{
+        grid-area: testimonioImagenTres;
+        padding: 3rem;
+        
+    }
+    
+    .testimonioDescripcionTres{
+        grid-area: testimonioDescripcionTres;
+        padding: 3rem;
+    }
+    
+
+
 
     .gridformReserva{
         display: grid;
@@ -86,12 +166,66 @@
         font-size: 1rem;
     }
 
-    .formImgLateral{
-        display: none;
-    }
-
-    .formBotones{
+    .formNombre{
+        grid-area: formNombre;
         padding: 1rem;
+        
+    }
+    
+    .formApellido{
+        grid-area: formApellido;
+        padding: 1rem;
+        
+    }
+    
+    .formEmail{
+        grid-area: formEmail;
+        padding: 1rem;
+    }
+    
+    .formOrigen{
+        grid-area: formOrigen;
+        padding: 1rem;
+        
+    }
+    
+    .formDestino{
+        grid-area: formDestino;
+        padding: 1rem;
+        
+    }
+    
+    .formAdulto{
+        grid-area: formAdulto;
+        padding: 1rem;
+        
+    }
+    
+    .formNino{
+        grid-area: formNino;
+        padding: 1rem;
+        
+    }
+    
+    .formFechaDesde{
+        grid-area: formFechaDesde;
+        padding: 1rem;
+        
+    }
+    
+    .formFechaHasta{
+        grid-area: formFechaHasta;
+        padding: 1rem;
+    }
+    
+    .formImgLateral{
+
+        display: none;
+        
+    }
+    
+    .formBotones{
+        grid-area: formBotones;
     }
 
     .gridFormContacto{
@@ -99,11 +233,35 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "formNombre"
-        "formApellido"
-        "formEmail" 
-        "formConsulta"
-        "formBotones";
+        "formContactoNombre"
+        "formContactoApellido"
+        "formContactoEmail" 
+        "formContactoConsulta"
+        "formContactoBotones";
+    }
+
+    .formContactoNombre{
+        grid-area: formContactoNombre;
+    }
+    
+    .formContactoApellido{
+        grid-area: formContactoApellido;
+    }
+    
+    .formContactoEmail{
+        grid-area: formContactoEmail;
+    }
+    
+    .formContactoImgLateral{
+        display: none;
+    }
+    
+    .formContactoConsulta{
+        grid-area: formContactoConsulta;
+    }
+    
+    .formContactoBotones{
+        grid-area: formContactoBotones;
     }
 
     .desktop{

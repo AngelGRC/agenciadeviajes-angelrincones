@@ -592,6 +592,21 @@ footer button {
         grid-template-rows: auto;
         grid-template-areas: "imagenUno"  "imagenDos" "imagenTres";
   }
+  .imagenUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: imagenUno;
+  }
+  .imagenDos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imagenDos;
+  }
+  .imagenTres {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: imagenTres;
+  }
   .gridDestinos {
     display: -ms-grid;
     display: grid;
@@ -601,11 +616,53 @@ footer button {
         grid-template-rows: auto;
         grid-template-areas: "destinoImagenUno"  "destinoDescripcionUno" "destinoImagenDos"  "destinoDescripcionDos" "destinoImagenTres" "destinoDescripcionTres";
   }
+  .destinoImagenUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: destinoImagenUno;
+    background-color: #6b8853;
+  }
+  .destinoDescripcionUno {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: destinoDescripcionUno;
+    padding: 3rem;
+    background-color: #6b8853;
+    color: white;
+  }
+  .destinoImagenDos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: destinoImagenDos;
+    border-top: #6b8853 1px solid;
+    border-bottom: #6b8853 1px solid;
+    background-color: #6b8853;
+  }
+  .destinoDescripcionDos {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: destinoDescripcionDos;
+    padding: 3rem;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    background-color: #6b8853;
+    color: white;
+  }
+  .destinoImagenTres {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: destinoImagenTres;
+  }
+  .destinoDescripcionTres {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: destinoDescripcionTres;
+    padding: 3rem;
+    background-color: #6b8853;
+    color: white;
+  }
   .bannerDestinos {
     display: none;
-  }
-  .destinoImagenUno {
-    margin-top: 6.25rem;
   }
   .gridDestinos ul li {
     display: list-item;
@@ -632,9 +689,45 @@ footer button {
     margin-top: 0rem;
     padding: 0rem;
   }
-  .testimonioImagenUno, .testimonioImagenDos, .testimonioImagenTres {
-    padding: 1rem;
+  .testimonioImagenUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: testimonioImagenUno;
+    padding: 3rem;
     border: none;
+  }
+  .testimonioDescripcionUno {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: testimonioDescripcionUno;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+  }
+  .testimonioImagenDos {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: testimonioImagenDos;
+    padding: 3rem;
+    border: none;
+  }
+  .testimonioDescripcionDos {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: testimonioDescripcionDos;
+    padding: 3rem;
+    border-bottom: #6b8853 1px solid;
+  }
+  .testimonioImagenTres {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: testimonioImagenTres;
+    padding: 3rem;
+  }
+  .testimonioDescripcionTres {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: testimonioDescripcionTres;
+    padding: 3rem;
   }
   .gridformReserva {
     display: -ms-grid;
@@ -646,11 +739,67 @@ footer button {
         grid-template-areas: "formNombre" "formApellido" "formEmail"  "formOrigen" "formDestino" "formAdulto"  "formNino" "formFechaDesde" "formFechaHasta" "formBotones";
     font-size: 1rem;
   }
+  .formNombre {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: formNombre;
+    padding: 1rem;
+  }
+  .formApellido {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: formApellido;
+    padding: 1rem;
+  }
+  .formEmail {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: formEmail;
+    padding: 1rem;
+  }
+  .formOrigen {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: formOrigen;
+    padding: 1rem;
+  }
+  .formDestino {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: formDestino;
+    padding: 1rem;
+  }
+  .formAdulto {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: formAdulto;
+    padding: 1rem;
+  }
+  .formNino {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: formNino;
+    padding: 1rem;
+  }
+  .formFechaDesde {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: formFechaDesde;
+    padding: 1rem;
+  }
+  .formFechaHasta {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: formFechaHasta;
+    padding: 1rem;
+  }
   .formImgLateral {
     display: none;
   }
   .formBotones {
-    padding: 1rem;
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: formBotones;
   }
   .gridFormContacto {
     display: -ms-grid;
@@ -659,7 +808,35 @@ footer button {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "formNombre" "formApellido" "formEmail"  "formConsulta" "formBotones";
+        grid-template-areas: "formContactoNombre" "formContactoApellido" "formContactoEmail"  "formContactoConsulta" "formContactoBotones";
+  }
+  .formContactoNombre {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: formContactoNombre;
+  }
+  .formContactoApellido {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: formContactoApellido;
+  }
+  .formContactoEmail {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: formContactoEmail;
+  }
+  .formContactoImgLateral {
+    display: none;
+  }
+  .formContactoConsulta {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: formContactoConsulta;
+  }
+  .formContactoBotones {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: formContactoBotones;
   }
   .desktop {
     display: none;
