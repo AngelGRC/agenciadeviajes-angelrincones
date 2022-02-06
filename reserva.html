@@ -47,32 +47,32 @@
                 <form action="" class="gridformReserva">
 
                     <div class="formNombre">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
+
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required />
                     </div>
 
                     <div class="formApellido">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
+                        
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required />
                     </div>
 
                     <div class="formEmail">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
+                        
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu email" required />
                     </div>
                     <!-- Menus desplegables -->
 
-                    <div class="formOrigen">
-                        <label for="origen">Origen</label>
+                    <div class="formOrigen input-group mb-3">
+                        <label class="input-group-text" for="origen">Origen</label>
 
-                        <select name="origen" id="origen" required>
+                        <select class="form-select" name="origen" id="origen" required>
                             <option value="ar">Buenos Aires</option>
                         </select>
                     </div>
-                    <div class="formDestino">
-                        <label for="destino">Destino</label>
+                    <div class="formDestino input-group mb-3">
+                        <label class="input-group-text" for="destino">Destino</label>
 
-                        <select name="destino" id="destino" required>
+                        <select class="form-select" name="destino" id="destino" required>
                             <option value="">Selecciona un destino</option>
                             <option value="eu">España</option>
                             <option value="uk">Reino Unido</option>
@@ -80,46 +80,38 @@
                         </select>
                     </div>
 
-                    <div class="formAdulto">
-                        <label for="adulto">Adultos</label>
+                    <div class="formAdulto input-group mb-3">
+                      <label class="input-group-text" for="adulto">Adultos</label>
 
-                        <input type="radio" name="adulto" id="adulto" value="1" required /><label
-                            for="adultocantidad">1</label>
-                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
-                            for="adultocantidad">2</label>
-                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
-                            for="adultocantidad">3</label>
-                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
-                            for="adultocantidad">4</label>
-                        <input type="radio" name="adulto" id="adulto" value="2" required /><label
-                            for="adultocantidad">5</label>
+                      <select class="form-select" name="adulto" id="adulto" required>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                      </select>
                     </div>
 
-                    <div class="formNino">
-                        <label for="nino">Niños</label>
+                    <div class="formNino input-group mb-3">
+                      <label class="input-group-text" for="nino">Niños</label>
 
-                        <input type="radio" name="nino" id="nino" value="1" required /><label
-                            for="ninocantidad">1</label>
-                        <input type="radio" name="nino" id="nino" value="2" required /><label
-                            for="ninocantidad">2</label>
-                        <input type="radio" name="nino" id="nino" value="2" required /><label
-                            for="ninocantidad">3</label>
-                        <input type="radio" name="nino" id="nino" value="2" required /><label
-                            for="ninocantidad">4</label>
-                        <input type="radio" name="nino" id="nino" value="2" required /><label
-                            for="ninocantidad">5</label>
+                      <select class="form-select" name="nino" id="nino" required>
+                          <option value="">Ninguno</option>
+                          <option value="1">1</option>
+                          <option value="1">2</option>
+                          <option value="1">3</option>
+                      </select>
                     </div>
 
-                    <div class="formFechaDesde">
-                        <label for="desde">Desde</label>
+                    <div class="formFechaDesde input-group mb-3">
+                        <label class="input-group-text" for="desde">Desde</label>
 
-                        <input type="date" name="desde" id="desde" />
+                        <input class="form-control" type="date" name="desde" id="desde" />
                     </div>
 
-                    <div class="formFechaHasta">
-                        <label for="hasta">Hasta</label>
+                    <div class="formFechaHasta input-group mb-3">
+                        <label class="input-group-text" for="hasta">Hasta</label>
 
-                        <input type="date" name="hasta" id="hasta" />
+                        <input class="form-control" type="date" name="hasta" id="hasta" />
                     </div>
 
                     <div class="formBotones">

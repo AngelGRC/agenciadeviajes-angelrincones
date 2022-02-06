@@ -8,6 +8,22 @@ body {
   background-color: #B5B5B5;
 }
 
+.btn--red {
+  background-color: red;
+}
+
+.btn--green {
+  background-color: green;
+}
+
+.btn--yellow {
+  background-color: yellow;
+}
+
+.btn--blue {
+  background-color: blue;
+}
+
 /* -------------------HEADER--------------*/
 .header {
   background-color: #6b8853;
@@ -286,7 +302,7 @@ body {
   margin-top: 3rem;
 }
 
-/* -------------------MAIN TESTIMONIOS--------------*/
+/* -------------------TESTIMONIOS--------------*/
 .gridTestimonio {
   color: #000000;
   display: -ms-grid;
@@ -372,7 +388,7 @@ body {
   padding: 2rem;
 }
 
-/* -------------------MAIN RESERVA------------*/
+/* -------------------RESERVA------------*/
 .form__contenedor {
   text-align: center;
   margin: 2rem;
@@ -491,13 +507,6 @@ body {
   background-color: #6b8853;
 }
 
-input[type=text], input[type=email], select, input[type=radio], input[type=date] {
-  border: 1px solid #6b8853;
-  font-size: 1rem;
-  background-color: transparent;
-  color: #6b8853;
-}
-
 /* -------------------CONTACTO---------------*/
 .main__formContacto {
   color: #000000;
@@ -519,18 +528,21 @@ input[type=text], input[type=email], select, input[type=radio], input[type=date]
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: formContactoNombre;
+  padding: 1rem;
 }
 
 .formContactoApellido {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: formContactoApellido;
+  padding: 1rem;
 }
 
 .formContactoEmail {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: formContactoEmail;
+  padding: 1rem;
 }
 
 .formContactoImgLateral {
@@ -544,6 +556,7 @@ input[type=text], input[type=email], select, input[type=radio], input[type=date]
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: formContactoConsulta;
+  padding: 1rem;
 }
 
 .formContactoBotones {
@@ -814,16 +827,19 @@ footer button {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: formContactoNombre;
+    padding: 1rem;
   }
   .formContactoApellido {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: formContactoApellido;
+    padding: 1rem;
   }
   .formContactoEmail {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: formContactoEmail;
+    padding: 1rem;
   }
   .formContactoImgLateral {
     display: none;
@@ -832,6 +848,7 @@ footer button {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: formContactoConsulta;
+    padding: 1rem;
   }
   .formContactoBotones {
     -ms-grid-row: 5;
